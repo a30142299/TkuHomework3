@@ -1,0 +1,26 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>1.php</title>
+	<style type="text/css">
+</style>
+</head>
+<body>
+<form action="" method="post">
+	N = <input type="text" name="N">	<BR>
+	M = <input type="text" name="M">	<BR>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<input type="submit" value="送出加總">
+</form>
+<?php
+	error_reporting(0);
+$N = $_POST["N"];
+$M = $_POST["M"];
+	$sum = 0;
+		for($i= $N ; $i<=$M ; $i++){
+				$sum = $sum + $i ;
+		}
+		echo $sum;
+?>
+</body>
+</html>
