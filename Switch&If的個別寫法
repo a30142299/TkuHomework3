@@ -1,0 +1,37 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>1.php</title>
+	<style type="text/css">
+</style>
+</head>
+<body>
+<?php
+		echo "if：<br>";
+$x = rand (1 , 3);
+	if($x == 1){
+		echo "$x ：一";
+	}	elseif($x == 2){
+			echo "$x ：二" ;
+	}else{
+		echo "$x ：三";
+	}
+
+?>
+<?php
+			echo "<br>switch : <br>";
+$x = rand(1, 3);
+	switch ($x){
+		case 1:
+			echo "$x : 一";
+		break;
+		case 2:
+			echo "$x : 二";
+		break;
+		case 3:
+			echo "$x : 三";
+		break;
+	}
+?>
+</body>
+</html>
