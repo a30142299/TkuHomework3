@@ -1,0 +1,17 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>1.php</title>
+	<style type="text/css">
+</style>
+</head>
+<body>
+<?php
+$sum = 0 ;
+	for ($i=1 ; $i<=100 ; $i+=2){
+		$sum = $sum + $i; //讓$SUM一直+2就是基數 +100次後再輸出  $i至少要<=3才有迴圈效果，到99或到100沒差
+	}
+	echo $sum;
+?>
+</body>
+</html>
