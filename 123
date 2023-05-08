@@ -1,0 +1,32 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>1.php</title>
+	<style type="text/css">
+</style>
+</head>
+<body>
+</form>
+<?php
+$ar = array (
+	array('1' , 'Aa' , '001' , '商'),
+	array('2' , 'Ba' , '002' , '文'),
+	array('3' , 'Ca' , '003' , '理'),
+);
+
+print_r($ar);
+
+echo "<table border='1'>";
+
+	for ($i=0 ; $i < count($ar) ; $i++) {
+		echo "<tr>";
+
+			for ($j=0 ; $j < count($ar[$i]); $j++){
+				echo "<td>".$ar[$i][$j]."</td>" ;
+			}
+		echo "</tr>";
+	}
+	echo "<table>";
+?>
+</body>
+</html>
