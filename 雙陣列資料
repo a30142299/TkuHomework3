@@ -1,0 +1,35 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>1.php</title>
+	<style type="text/css">
+</style>
+</head>
+<body>
+</form>
+<?php
+$ar = array (
+	array('號碼'=>'1' ,'書名'=> 'Aa' ,'集數'=> '001' ,'類型'=> '商' ,'可借閱數'=> '10'),
+	array('號碼'=>'2' ,'書名'=> 'Ba' ,'集數'=> '002' ,'類型'=> '文' ,'可借閱數'=> '10'),
+	array('號碼'=>'3' ,'書名'=> 'Ca' ,'集數'=> '003' ,'類型'=> '理' ,'可借閱數'=> '10'),
+	array('號碼'=>'4' ,'書名'=> 'Da' ,'集數'=> '003' ,'類型'=> '理' ,'可借閱數'=> '10'),
+	array('號碼'=>'5' ,'書名'=> 'Fa' ,'集數'=> '003' ,'類型'=> '理' ,'可借閱數'=> '10'),
+);
+
+print_r($ar);
+
+echo "<table border='1'>";
+echo "<tr><td>號碼</td><td>書名</td><td>集數</td><td>類型</td><td>可借閱數</td></te>";
+	for ($i=0 ; $i < count($ar) ; $i++) {
+		echo "<tr>";
+				echo "<td>".$ar[$i]['號碼']."</td>";
+				echo "<td>".$ar[$i]['類型']."</td>";
+				echo "<td>".$ar[$i]['書名']."</td>";
+				echo "<td>".$ar[$i]['集數']."</td>";
+				echo "<td>".$ar[$i]['可借閱數']."</td>";
+		echo "</tr>";
+	}
+	echo "</table>";
+?>
+</body>
+</html>
